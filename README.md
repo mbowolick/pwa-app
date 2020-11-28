@@ -6,8 +6,10 @@ https://github.com/iamshaunjp/pwa-tutorial
 From the YouTube playlist:
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7
 
+Supports:
+* Static Caching (Pre-cached content on initial Service Worker installation)
+* Dynamic Caching (when the user fetches uncached content, it will be added to the cache for next fetch)
 
 Tools I used:
 * Materialize: https://materializecss.com/
 * Andriod Studio: https://developer.android.com/studio
-* 
