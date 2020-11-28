@@ -1,7 +1,7 @@
 # pwa-app
 A small exploratory app to build foundation knowledge in the Progressive Web Application (PWA) framework. 
 
-![ScreenGrab](img/app-example.png | width=250)
+![ScreenGrab](img/app-example.png)
 
 ## Influenced from
 All details to this app was followed and guided by: 
