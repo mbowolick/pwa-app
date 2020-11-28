@@ -4,7 +4,7 @@
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#e8e8e8",
-    "theme_color": "#30475e",
+    "theme_color": "#f05454",
     "orientation": "portrait-primary",
     "icons": [
         {
@@ -21,6 +21,11 @@
             "src": "/img/icons/icon-128x128.png",
             "type": "image/png",
             "sizes": "128x128"
+        },
+        {
+            "src": "/img/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
         },
         {
             "src": "/img/icons/icon-256x256.png",
