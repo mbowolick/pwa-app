@@ -5,3 +5,9 @@ All details to this app was followed and guided by:
 https://github.com/iamshaunjp/pwa-tutorial
 From the YouTube playlist:
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7
+
+
+Tools I used:
+* Materialize: https://materializecss.com/
+* Andriod Studio: https://developer.android.com/studio
+* 
