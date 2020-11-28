@@ -1,7 +1,7 @@
 # pwa-app
 A small exploratory app to build foundation knowledge in the Progressive Web Application (PWA) framework. 
 
-![ScreenGrab](img/app-example.png | width=250)
+![ScreenGrab](img/app-example.png)
 
 ## Influenced from
 All details to this app was followed and guided by: 
@@ -13,7 +13,8 @@ https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7
 * Static Caching (Pre-cached content on initial Service Worker installation)
 * Dynamic Caching (when the user fetches uncached content, it will be added to the cache for next fetch)
 * Cache pages can work in offline mode
-* Data is cached in IndexDb and also works in offline mode
+* Externally hosted data with Google's Firebase - Firestore database
+* Data is cached in IndexedDb and also works in offline mode
 
 ## Tools I used:
 * Materialize: https://materializecss.com/
