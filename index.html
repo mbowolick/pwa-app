@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PWA App</title>
+  <title>PWA Movies App</title>
   <!-- materialize icons, css & js -->
   <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,39 +40,11 @@
     
 
   <!-- movies -->
-  <div class="recipes container grey-text text-darken-1">
-    <h6 class="center">Movies</h6>
-    <div class="card-panel recipe white row">
-      <img src="/img/clapperboard.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Interstellar</div>
-        <div class="recipe-ingredients">Dir: Christopher Nolan</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/clapperboard.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Blade Runner 2049</div>
-        <div class="recipe-ingredients">Dir: Denis Villeneuve</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/clapperboard.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Super 8</div>
-        <div class="recipe-ingredients">Dir: J.J. Abrams</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
+  <div class="movies container grey-text text-darken-1">
+    <h6 class="center">My Favourite Movies</h6>
+    <!-- Firebase firestore content gets added here -->
   </div>
+
 
   <div class="center">
     <a class="btn-floating btn-small add-btn sidenav-trigger" data-target="side-form">
@@ -80,9 +52,10 @@
     </a>
   </div>
 
-  <!-- add recipe side nav -->
+
+  <!-- add movie side nav -->
   <div id="side-form" class="sidenav side-form">
-    <form class="add-recipe container section">
+    <form class="add-movie container section">
       <h6 >New Movie</h6>
       <div class="divider"></div>
       <div class="input-field">
@@ -90,8 +63,8 @@
         <label for="title">Movie Title</label>
       </div>
       <div class="input-field">
-        <input placeholder="e.g. Dir: George Lucas" id="ingredients" type="text" class="validate">
-        <label for="ingredients">Director</label>
+        <input placeholder="e.g. George Lucas" id="director" type="text" class="validate">
+        <label for="director">Director</label>
       </div>
       <div class="input-field center">
         <button class="btn-small">Add</button>
@@ -99,7 +72,31 @@
     </form>
   </div>
   
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyA2Jsd84tFur2qB_utFal-gind2JF3kVKA",
+      authDomain: "pwa-movie-app.firebaseapp.com",
+      databaseURL: "https://pwa-movie-app.firebaseio.com",
+      projectId: "pwa-movie-app",
+      storageBucket: "pwa-movie-app.appspot.com",
+      messagingSenderId: "126060895998",
+      appId: "1:126060895998:web:51354618a32f036623cfaf",
+      measurementId: "G-S6D8WFVFXX"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+  </script>
+
   <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
   <script src="/js/ui.js"></script>
   
 </body>

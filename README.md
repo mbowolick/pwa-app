@@ -13,3 +13,4 @@ Supports:
 Tools I used:
 * Materialize: https://materializecss.com/
 * Andriod Studio: https://developer.android.com/studio
+* Google's Firebase + Cloud Firestore: https://firebase.google.com/products/firestore
